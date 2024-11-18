@@ -1,0 +1,32 @@
+{
+  "name": "url-shortener-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r esm src/server.js",
+    "test": "ava"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "ava": {
+    "require": [
+      "esm"
+    ]
+  },
+  "dependencies": {
+    "bunyan": "^1.8.15",
+    "cors": "^2.8.5",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "http-errors": "^1.7.2",
+    "knex": "^0.95.7",
+    "sqlite3": "^4.2.0",
+    "validator": "^13.6.0"
+  },
+  "devDependencies": {
+    "ava": "^3.15.0"
+  }
+}
