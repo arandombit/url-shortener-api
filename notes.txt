@@ -1,0 +1,18 @@
+In order to run the application, simply run the following commands:
+
+- sqlite3 urls.db < schema/schema.sql
+- docker build -t url-shortener-api .
+- docker run -d -v $(pwd)/urls.db:/app/urls.db -p 8080:80 url-shortener-api
+
+Or run the following:
+
+- npm start
+
+In order to run the unit tests, simply run the following:
+
+- npm test
+
+In order to run the smoke tests, simply run the following:
+
+- chmod +x ./smoke-tests.sh
+- ./smoke-tests.sh
